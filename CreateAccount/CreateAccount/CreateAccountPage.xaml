@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:CreateAccount" x:Class="CreateAccount.CreateAccountPage">
 <ContentPage.Content>
-    <StackLayout Padding="0,20,0,0">
+
+    <StackLayout Padding="0,20,0,0" HorizontalOptions = "Center" VerticalOptions = "Center" Spacing = "20">
     <Label Text = "Create Account" 
             HorizontalOptions = "Center"
             VerticalOptions = "Center"
            TextColor = "Black" 
            FontSize = "20">
     </Label>
+  
+            <StackLayout  Spacing = "10">
+        <Entry x:Name = "FirstName" Placeholder = "First Name" WidthRequest = "50" HeightRequest = "40"></Entry>
+        <Entry x:Name = "MiddleName" Placeholder = "Middle Name" WidthRequest = "50" HeightRequest = "40"></Entry>
+        <Entry x:Name = "LastName" Placeholder = "Last Name" WidthRequest = "50" HeightRequest = "40"></Entry>
+        </StackLayout>
 
-        <Entry x:Name = "FirstName" Placeholder = "First Name" WidthRequest = "150"></Entry>
-        <Entry x:Name = "MiddleName" Placeholder = "Middle Name" WidthRequest = "150"></Entry>
-        <Entry x:Name = "LastName" Placeholder = "Last Name" WidthRequest = "150"></Entry>
-
+            
          <StackLayout Orientation = "Horizontal" HorizontalOptions = "Center">
          <Label Text = "Date of Birth" FontSize = "23" TextColor = "Black" VerticalOptions = "End"/>
                 <DatePicker x:Name = "Date"></DatePicker>
@@ -37,16 +41,6 @@
                     TextColor = "White">
                 </Button> 
             </StackLayout>
-        
-    <Button HorizontalOptions = "Center" 
-            VerticalOptions = "Center" 
-            Text = "Go to Video Page" 
-            BackgroundColor = "Red" 
-            WidthRequest = "200" 
-            TextColor = "White" 
-            Clicked ="button_action">
-    </Button>
-
         
         </StackLayout>
         </ContentPage.Content>
