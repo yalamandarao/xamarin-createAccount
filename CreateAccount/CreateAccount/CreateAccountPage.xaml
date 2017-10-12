@@ -11,7 +11,7 @@
 
         <Entry x:Name = "FirstName" Placeholder = "First Name" WidthRequest = "150"></Entry>
         <Entry x:Name = "MiddleName" Placeholder = "Middle Name" WidthRequest = "150"></Entry>
-        <Entry x:Name ="LastName" Placeholder = "Last Name" WidthRequest = "150"></Entry>
+        <Entry x:Name = "LastName" Placeholder = "Last Name" WidthRequest = "150"></Entry>
 
          <StackLayout Orientation = "Horizontal" HorizontalOptions = "Center">
          <Label Text = "Date of Birth" FontSize = "23" TextColor = "Black" VerticalOptions = "End"/>
@@ -32,7 +32,7 @@
                 </Button>   
                 <Button Text = "View" 
                     BackgroundColor = "Red"
-                    Clicked = "saveButton_action" 
+                    Clicked = "viewButton_action" 
                     WidthRequest = "150" 
                     TextColor = "White">
                 </Button> 
